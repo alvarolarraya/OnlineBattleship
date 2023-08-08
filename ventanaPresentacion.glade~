@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="VentanaPrincipal">
+    <property name="can_focus">False</property>
+    <property name="hexpand">True</property>
+    <property name="vexpand">True</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="Contenedor">
+        <property name="width_request">500</property>
+        <property name="height_request">500</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+        <property name="hexpand">True</property>
+        <property name="vexpand">True</property>
+        <child>
+          <object class="GtkEntry" id="AreaTexto">
+            <property name="width_request">168</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="max_length">16</property>
+            <property name="width_chars">16</property>
+            <property name="max_width_chars">16</property>
+            <property name="text" translatable="yes">Por defecto</property>
+            <signal name="changed" handler="on_AreaTexto_changed" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">170</property>
+            <property name="y">231</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="EtiquetaNombre">
+            <property name="width_request">100</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Nombre:</property>
+          </object>
+          <packing>
+            <property name="x">77</property>
+            <property name="y">234</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="BotonEnviar">
+            <property name="label" translatable="yes">Enviar</property>
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_BotonEnviar_clicked" swapped="no"/>
+            <signal name="enter" handler="on_BotonEnviar_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">188</property>
+            <property name="y">312</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="Titulo">
+            <property name="width_request">170</property>
+            <property name="height_request">100</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">HUNDIR LA FLOTA</property>
+            <attributes>
+              <attribute name="font-desc" value="Noto Sans CJK TC Bold 10"/>
+              <attribute name="absolute-size" value="20000"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">165</property>
+            <property name="y">59</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="Autores">
+            <property name="width_request">100</property>
+            <property name="height_request">34</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Álvaro Larraya
+David Pérez</property>
+          </object>
+          <packing>
+            <property name="x">400</property>
+            <property name="y">466</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="EtiquetaError">
+            <property name="width_request">100</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="xalign">0.5</property>
+            <attributes>
+              <attribute name="foreground" value="#efef29292929"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">33</property>
+            <property name="y">171</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
